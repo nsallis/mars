@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # the best way to run this is with 
-# `curl https://raw.githubusercontent.com/nsallis/mars/master/installer.sh | bash`
+# `bash <(curl https://raw.githubusercontent.com/nsallis/mars/master/installer.sh)`
 # this will run the full installation for you automatically
 
 echo "\
@@ -60,8 +60,7 @@ echo "
 Installing custom dotfiles...\
 ****************************\
 "
-yadm clone https://github.com/nsallis/dotfiles.git
-yadm checkout mars-proto -f
+yadm clone https://github.com/nsallis/mars.git
 
 echo "
 ****************************\
