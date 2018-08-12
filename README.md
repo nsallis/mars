@@ -2,7 +2,8 @@
 My Auto-Rice Script - an auto-rice script for minimal-ubuntu
 
 ## Getting Started
-Run the setup script with
+Install minimal ubuntu from https://help.ubuntu.com/community/Installation/MinimalCD, once you have rebooted into the OS,
+run the mars setup script with:
 ```
 bash <(curl https://raw.githubusercontent.com/nsallis/mars/master/installer.sh)
 ```
