@@ -40,7 +40,7 @@ bindsym $mod+x kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run -b -fn 'xft:Terminus:pixelsize=8' -nb '#191919' -nf '#9ac0cd' -sb '#191919' -sf '#bf3f34' -p 'picklist >> '
-bindsym $mod+d exec rofi -show run -theme mytheme
+bindsym $mod+d exec XDG_CURRENT_DESKTOP=GNOME rofi -show run -theme mytheme # hack to get gnome-control-center to work for now
 
 #CHANGING BORDER STYLE
 #bindsym $mod+t border normal
