@@ -1,4 +1,4 @@
-# mars
+# M.A.R.S
 My Auto-Rice Script - an auto-rice script for minimal-ubuntu
 
 ## Getting Started
