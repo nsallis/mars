@@ -14,10 +14,14 @@ fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:/usr/local/go/bin"
+export GOPATH="$HOME/Documents/go"
 
 alias vim="nvim"
 alias customers="cd ~/work/ResponsiveCustomerPortalSC"
+alias atoms="cd ~/work/ResponsiveCustomerPortalSC/src/components/ui/atoms"
 export XDG_CURRENT_DESKTOP=GNOME
+export EDITOR="nvim"
 
 # powerbar install:
 

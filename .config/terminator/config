@@ -1,4 +1,6 @@
 [global_config]
+  borderless = True
+  extra_styling = False
 [keybindings]
 [layouts]
   [[default]]

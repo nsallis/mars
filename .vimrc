@@ -18,7 +18,7 @@ set autoindent
 set smartindent
 set hlsearch
 set noswapfile
-" set 
+" set
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 set guioptions-=m  "remove menu bar
 
@@ -60,16 +60,23 @@ Plug 'nathanaelkane/vim-indent-guides' " indent guides
 Plug 'mxw/vim-jsx' " jsx syntax highlighting
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fuzzy file finder (see bellow)
 Plug 'junegunn/fzf.vim'
-Plug 'vim-scripts/copypath.vim' " copy file path with :CopyPath
+Plug 'vim-scripts/copypath.vim' " copy file path with,b :CopyPath
 Plug 'ajmwagar/vim-deus' " deus color scheme
 " Plug 'NLKNguyen/papercolor-theme'
 " Plug 'hzchirs/vim-material' " vim-material theme
 Plug 'rhysd/vim-crystal' " crystal syntax
 Plug 'tpope/vim-fugitive' " fugitive git wrapper
 Plug 'silvertale/vim', {'as': 'dracula'}
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 colorscheme dracula "vim-material deus dracula
+
+" remove trailing whitespace on save:
+autocmd BufWritePre * :%s/\s\+$//e
+
+" add deoplete
+" let g:deoplete#enable_at_startup = 1
 
 " add fzf for fuzzy finder
 set rtp+=/usr/local/opt/fzf
