@@ -23,6 +23,9 @@ alias atoms="cd ~/work/ResponsiveCustomerPortalSC/src/components/ui/atoms"
 export XDG_CURRENT_DESKTOP=GNOME
 export EDITOR="nvim"
 
+# use xmodmap to use homerow as arrow keys
+xmodmap ~/.xmodmap
+
 # powerbar install:
 
 function _update_ps1() {

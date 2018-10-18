@@ -10,7 +10,7 @@
 set $mod Mod1
 
 #default, floating, tabbed
-#new container floating 
+#new container floating
 
 # new window default border
 #new_window 1pixel
@@ -51,6 +51,9 @@ bindsym $mod+d exec XDG_CURRENT_DESKTOP=GNOME rofi -show run -theme mytheme # ha
 #bindsym $mod+shift+n workspace next
 #bindsym $mod+shift+p workspace prev
 
+# SUSPEND
+bindsym $mod+s exec "systemctl suspend"
+
 # MEDIA KEYS
 bindsym $mod+p exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
 bindsym $mod+shift+p exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
@@ -66,15 +69,15 @@ bindsym $mod+Shift+bracketleft move workspace to output left
 bindsym $mod+Shift+bracketright move workspace to output right
 
 # gaps...
-gaps inner 10 
-gaps outer 0 
+gaps inner 10
+gaps outer 0
 
 # change volume
 bindsym $mod+Shift+Up exec amixer set Master 10.0%+
 bindsym $mod+Shift+Down exec amixer set Master 10.0%-
 
 # BORDERLESS CONTAINER
-#i3-msg border none 
+#i3-msg border none
 
 # WHICH WORKSPACE #
 #assign [class="Iceweasel"] 2
@@ -183,7 +186,7 @@ mode "resize" {
   bindsym j resize shrink width 10 px or 10 ppt
     bindsym k resize grow height 10 px or 10 ppt
     bindsym l resize shrink height 10 px or 10 ppt
-    bindsym semicolon resize grow width 10 px or 10 ppt 
+    bindsym semicolon resize grow width 10 px or 10 ppt
 # same bindings, but for the arrow keys
 
 # back to normal: Enter or Escape
@@ -220,7 +223,7 @@ bar {
 #status_command conky -c /home/xxx/.i3/.conkyrc
 #	tray_output none
     position bottom
-#mode hide 
+#mode hide
     mode dock
 
     colors {
