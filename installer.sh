@@ -4,14 +4,15 @@
 # `bash <(curl https://raw.githubusercontent.com/nsallis/mars/master/installer.sh)`
 # this will run the full installation for you automatically
 
-echo "\
-****************************\ 
-Installing base packages...\
-****************************\
-"
-sudo apt-get -y -qq install xserver-xorg xserver-xorg-core xfonts-base xinit x11-xserver-utils x11-apps x11-session-utils x11-utils xinput xorg lightdm lightdm-gtk-greeter make update-manager > /dev/null
+# base packages are disabled by default because they aren't needed on a regular ubuntu installation
+#echo "\
+#****************************\ 
+#Installing base packages...\
+#****************************\
+#"
+#sudo apt-get -y -qq install xserver-xorg xserver-xorg-core xfonts-base xinit x11-xserver-utils x11-apps x11-session-utils x11-utils xinput xorg lightdm lightdm-gtk-greeter make update-manager > /dev/null
 
-sudo apt -qq update > /dev/null
+#sudo apt -qq update > /dev/null
 
 echo "\
 ****************************\
