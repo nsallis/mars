@@ -88,4 +88,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # bash powerline
 pip install powerline-shell
 
-sudo apt install nm-applet clipit
+sudo apt install clipit
