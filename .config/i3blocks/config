@@ -1,0 +1,52 @@
+command=/usr/share/i3blocks/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+[cpu_usage]
+label=CPU
+interval=10
+min_width=CPU: 100.00%
+
+[volume]
+label=VOL
+#instance=Master
+#signal=10
+full_text=VOL:
+command=amixer get Master |grep % |awk '{print $4}'|sed -e 's/\[//' -e 's/\]//'
+interval=5
+color=#42f48f
+
+[iface]
+label=IP
+instance=wlp59s0
+color=#00ccff
+interval=10
+separator=false
+
+[disk]
+label=DISK
+#instance=/mnt/data
+interval=30
+
+#[memory]
+#label=SWAP
+#instance=swap
+#separator=false
+#interval=30
+
+[memory]
+label=MEM
+separator=false
+interval=30
+
+[battery]
+label=BAT
+#label=⚡
+#instance=1
+interval=30
+
+# Update time every 5 seconds
+[time]
+command=date +%T
+interval=1
+color=#42f48f
