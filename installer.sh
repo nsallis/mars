@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# the best way to run this is with 
+# the best way to run this is with
 # `bash <(curl https://raw.githubusercontent.com/nsallis/mars/master/installer.sh)`
 # this will run the full installation for you automatically
 
 # base packages are disabled by default because they aren't needed on a regular ubuntu installation
 #echo "\
-#****************************\ 
+#****************************\
 #Installing base packages...\
 #****************************\
 #"
@@ -28,6 +28,13 @@ Creating home directories...\
 "
 mkdir Documents Pictures Desktop builds
 
+# install exa (used in bashrc as ls replacement)
+cd builds
+wget -c https://github.com/ogham/exa/releases/download/v0.8.0/exa-linux-x86_64-0.8.0.zip
+unzip exa-linux-x86_64-0.8.0.zip
+sudo mv exa-linux-x86_64 /usr/local/bin/exa
+cd
+
 echo "\
 ****************************\
 Installing i3-gaps\
@@ -44,7 +51,7 @@ make
 sudo make install
 
 mkdir ~/builds
-cd ~/builds 
+cd ~/builds
 git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps
 autoreconf --force --install
@@ -78,7 +85,7 @@ sudo apt install google-chrome-stable
 # powerline font
 mkdir ~/.fonts
 cd ~/.fonts
-wget https://github.com/powerline/fonts/raw/master/DejaVuSansMono/DejaVu%20Sans%20Mono%20for%20Powerline.ttf 
+wget https://github.com/powerline/fonts/raw/master/DejaVuSansMono/DejaVu%20Sans%20Mono%20for%20Powerline.ttf
 sudo fc-cache -f -v
 
 # VimPlug

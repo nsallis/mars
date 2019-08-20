@@ -47,6 +47,6 @@ interval=30
 
 # Update time every 5 seconds
 [time]
-command=date +%T
+command=date +%c
 interval=1
 color=#42f48f
