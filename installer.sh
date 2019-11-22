@@ -40,7 +40,7 @@ echo "\
 Installing i3-gaps\
 ****************************\
 "
-sudo apt -y -qq install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev xutils-dev autoconf i3-wm i3status libxcb-shape0-dev > /dev/null
+sudo apt -y -qq install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev xutils-dev autoconf i3-wm i3status i3blocks libxcb-shape0-dev > /dev/null
 
 cd /tmp
 git clone https://github.com/Airblader/xcb-util-xrm
